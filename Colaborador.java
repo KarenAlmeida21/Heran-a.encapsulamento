@@ -13,6 +13,14 @@ public class Colaborador extends Pessoa{
     private double salario_base;
     private double imposto;
 
+    public Colaborador(String nome, String endereço, String telefone, int codigo_setor, double salario_base, double imposto) {
+        super(nome, endereço, telefone);
+        this.codigo_setor = codigo_setor;
+        this.salario_base=salario_base;
+        this.imposto=imposto;
+
+    }
+
     public int getCodigo_setor() {
         return codigo_setor;
     }
@@ -37,13 +45,7 @@ public class Colaborador extends Pessoa{
         this.codigo_setor = codigo_setor;
     }
 
-    public Colaborador(String nome, String endereço, String telefone, int codigo_setor, double salario_base, double imposto) {
-        super(nome, endereço, telefone);
-        this.codigo_setor = codigo_setor;
-        this.salario_base=salario_base;
-        this.imposto=imposto;
 
-    }
     public double calcular_salario(){
      double salario_liquido =   salario_base-imposto;
      return salario_liquido;

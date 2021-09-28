@@ -26,10 +26,14 @@ public class Main {
         System.out.println("---------------------------------------------------------");
         System.out.println("Administrador");
         Administrador rh = new Administrador("Paul","rua hutoia","659863",54,3800,180,300);
+        rh.setNome("Ana");
         System.out.println("Nome: " + rh.getNome());
         System.out.println("Endereço: " + rh.getEndereço());
         System.out.println("Telefone: " + rh.getTelefone());
+        rh.setImposto(200);
         rh.calcular_salario();
+        //double Salario_Liquido = rh.calcular_salario();
+       // System.out.println(Salario_Liquido);
         System.out.println("Salario liquido do Administrador: " +rh.calcular_salario());
 
 

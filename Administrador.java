@@ -25,7 +25,7 @@ public class Administrador extends Colaborador{
 
     @Override
     public double calcular_salario() {
-        double salario_liquido= (getSalario_base() - getImposto() ) + ajuda_custo;
+        double salario_liquido= (this.getSalario_base() - this.getImposto() ) + this.ajuda_custo;
         return salario_liquido;
     }
 }
